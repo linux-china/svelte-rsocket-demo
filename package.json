@@ -7,11 +7,14 @@
   "description": "Svelte RSocket Demo",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack-dev-server --open",
-    "rsocket-server": "rsocket-cli -i \"pong\" --server --debug ws://localhost:42252",
+    "autobuild": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "dev": "run-p start autobuild",
+    "rsocket-server": "rsocket-cli -i \"pong\" --server --debug ws://localhost:8080/rsocket",
     "clean": "rm -rf public/build"
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "cross-env": "^7.0.2",
     "css-loader": "^4.3.0",
     "mini-css-extract-plugin": "^0.12.0",

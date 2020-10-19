@@ -8,6 +8,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "webpack-dev-server --content-base public",
+    "rsocket-server": "rsocket-cli -i \"pong\" --server --debug ws://localhost:42252",
     "clean": "rm -rf public/build"
   },
   "devDependencies": {

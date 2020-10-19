@@ -7,7 +7,7 @@
   "description": "Svelte RSocket Demo",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack-dev-server --content-base public",
+    "dev": "webpack-dev-server --open",
     "rsocket-server": "rsocket-cli -i \"pong\" --server --debug ws://localhost:42252",
     "clean": "rm -rf public/build"
   },

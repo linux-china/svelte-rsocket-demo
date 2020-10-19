@@ -106,7 +106,7 @@ rsocket.requestStream = async (routing, data) => {
                 metadata: encodeAndAddWellKnownMetadata(
                     Buffer.alloc(0),
                     MESSAGE_RSOCKET_ROUTING,
-                    Buffer.from(routing)
+                    Buffer.from(String.fromCharCode(routing.length) + routing)
                 )
             }).subscribe({
                 onComplete: () => observer.complete(),

@@ -33,7 +33,7 @@ function connect(wsUrl) {
  * RSocket instance with extra methods
  * @type {Promise<ReactiveSocket>}
  */
-const rsocket = connect("ws://localhost:42252")
+const rsocket = connect("ws://localhost:8080/rsocket")
 
 /**
  * rsocket request/response

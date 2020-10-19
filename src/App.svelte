@@ -5,7 +5,7 @@
     import {rsocket} from "./rsocket-client"
 
     async function handlerClick() {
-        response = await rsocket.requestResponse("demo.service", "HI")
+        response = await rsocket.requestResponse("demo.service", "Ping")
         rsocketRequestCounter = rsocketRequestCounter + 1;
     }
 </script>

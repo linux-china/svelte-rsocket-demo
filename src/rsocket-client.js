@@ -49,7 +49,7 @@ rsocket.requestResponse = async (routing, data) => {
                 metadata: encodeAndAddWellKnownMetadata(
                     Buffer.alloc(0),
                     MESSAGE_RSOCKET_ROUTING,
-                    Buffer.from(routing)
+                    Buffer.from(String.fromCharCode(routing.length) + routing)
                 )
             }).subscribe({
                 onComplete: (payload) => {
@@ -77,7 +77,7 @@ rsocket.fireAndForget = async (routing, data) => {
                 metadata: encodeAndAddWellKnownMetadata(
                     Buffer.alloc(0),
                     MESSAGE_RSOCKET_ROUTING,
-                    Buffer.from(routing)
+                    Buffer.from(String.fromCharCode(routing.length) + routing)
                 )
             }).subscribe({
                 onComplete: () => {

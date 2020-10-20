@@ -25,6 +25,13 @@ $ rsocket-cli -i "pong" --server --debug ws://localhost:8080/rsocket
 $ npm run dev
 ```
 
+# Use cases
+
+* RPC call
+* Data Stream Display
+* Data Collection from the Browser
+* Distributed State Management: Svelte store + RSocket metadataPush + CloudEvents spec
+
 # References
 
 * RSocket-JS composite metadata: https://github.com/rsocket/rsocket-js/blob/master/packages/rsocket-examples/src/CompositeMetadataExample.js

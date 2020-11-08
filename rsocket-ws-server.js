@@ -29,6 +29,7 @@ async function receive() {
 
 async function run() {
     const rsocket = await receive();
+    console.log("RSocket server started on ws://localhost:8080/rsocket")
     const deferred = new Deferred();
     return deferred.getPromise();
 }

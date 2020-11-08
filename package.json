@@ -32,6 +32,7 @@
     "rsocket-flowable": "^0.0.14",
     "rsocket-types": "^0.0.16",
     "rsocket-websocket-client": "^0.0.19",
+    "rsocket-websocket-server": "^0.0.19",
     "rxjs": "^6.6.3",
     "svelte-observable": "^0.4.0"
   }

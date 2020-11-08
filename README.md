@@ -16,7 +16,7 @@ Svelte RSocket Demo
 * Start RSocket server to supply request/response service
 
 ```
-$ rsocket-cli -i "pong" --server --debug ws://localhost:8080/rsocket
+$ node rsocket-ws-server.js
 ```
 
 * Start Svelte app to test

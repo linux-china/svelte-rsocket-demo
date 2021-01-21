@@ -128,9 +128,9 @@ function convertToBuffer(data) {
     } else if (Buffer.isBuffer(data)) {
         return data;
     } else if (typeof data === 'string' || data instanceof String) {
-        return new Buffer(data);
+        return Buffer.from(data);
     } else {
-        return new Buffer(JSON.stringify(data));
+        return Buffer.from(JSON.stringify(data));
     }
 
 }

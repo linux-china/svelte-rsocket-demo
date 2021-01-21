@@ -54,6 +54,7 @@ module.exports = {
     devtool: prod ? false : 'source-map',
     devServer: {
         contentBase: './public',
+        port: 9000,
         hot: true
     }
 };

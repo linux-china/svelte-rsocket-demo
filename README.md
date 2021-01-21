@@ -37,3 +37,4 @@ $ npm run dev
 * RSocket-JS composite metadata: https://github.com/rsocket/rsocket-js/blob/master/packages/rsocket-examples/src/CompositeMetadataExample.js
 * svelte-webpack-template: https://github.com/sveltejs/template-webpack
 * svelte-observable: https://github.com/timhall/svelte-observable
+* RSocket Chrome Dev Tools: https://github.com/rsocket/rsocket-chrome-devtools

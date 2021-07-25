@@ -7,7 +7,7 @@ import {
     APPLICATION_JSON,
     MESSAGE_RSOCKET_ROUTING
 } from 'rsocket-core';
-import {ReactiveSocket} from 'rsocket-types';
+import { ReactiveSocket } from 'rsocket-types/build/ReactiveSocketTypes';
 import RSocketWebSocketClient from 'rsocket-websocket-client';
 import {Observable} from "rxjs";
 

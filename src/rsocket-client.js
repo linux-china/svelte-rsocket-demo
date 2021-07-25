@@ -7,14 +7,15 @@ import {
     APPLICATION_JSON,
     MESSAGE_RSOCKET_ROUTING
 } from 'rsocket-core';
-import { ReactiveSocket } from 'rsocket-types/build/ReactiveSocketTypes';
+import {Single} from 'rsocket-flowable';
+import {ReactiveSocket} from 'rsocket-types/build/ReactiveSocketTypes';
 import RSocketWebSocketClient from 'rsocket-websocket-client';
 import {Observable} from "rxjs";
 
 /**
  * connect to RSocket Server
  * @param wsUrl websocket URL
- * @return {Promise<ReactiveSocket>}
+ * @return {Single<ReactiveSocket>}
  */
 function connect(wsUrl) {
     const client = new RSocketClient({
@@ -31,7 +32,7 @@ function connect(wsUrl) {
 
 /**
  * RSocket instance with extra methods
- * @type {Promise<ReactiveSocket>}
+ * @type {Single<ReactiveSocket>}
  */
 const rsocket = connect("ws://localhost:8080/rsocket")
 

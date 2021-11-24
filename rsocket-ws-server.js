@@ -29,5 +29,6 @@ const WebSocketTransport = RSocketWebSocketServer.default;
 const transport = new WebSocketTransport({host: "127.0.0.1", port: 8080, path:"/rsocket"});
 const rsocketServer = new RSocketServer({transport: transport, getRequestHandler: requestHandler});
 rsocketServer.start();
+console.log("RSocket server started on http://localhost:8080/rsocket");
 
 

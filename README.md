@@ -9,7 +9,6 @@ Svelte RSocket Demo
 # Requirements
 
 * Only Webpack bundle: some issue with Rollup.js
-* Webpack: 4.x. Not compatible with Webpack 5.x https://github.com/sveltejs/svelte-loader/issues/139
 
 # How to run demo?
 
